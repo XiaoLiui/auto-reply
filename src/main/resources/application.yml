@@ -1,0 +1,13 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+spring:
+  application:
+    name: auto-reply
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+openai:
+  model: ${OPENAI_MODEL:gpt-3.5-turbo}
+  apiKey: ${OPENAI_API_KEY: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}
